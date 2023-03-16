@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaint_categories",
+  "info": {
+    "singularName": "complaint-category",
+    "pluralName": "complaint-categories",
+    "displayName": "Complaint Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    }
+  }
+}

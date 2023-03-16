@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaint_handlings",
+  "info": {
+    "singularName": "complaint-handling",
+    "pluralName": "complaint-handlings",
+    "displayName": "Complaint Handling",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "notes": {
+      "type": "text"
+    },
+    "workingstatus": {
+      "type": "enumeration",
+      "enum": [
+        "resolved",
+        "hold",
+        "closed"
+      ]
+    },
+    "complaint_images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::complaint-image.complaint-image",
+      "mappedBy": "complaint_handling"
+    },
+    "tasks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::task.task",
+      "mappedBy": "complaint_handling"
+    }
+  }
+}

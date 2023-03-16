@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaint_images",
+  "info": {
+    "singularName": "complaint-image",
+    "pluralName": "complaint-images",
+    "displayName": "Complaint Image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isprimary": {
+      "type": "boolean"
+    },
+    "filename": {
+      "type": "string"
+    },
+    "complaint_handling": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::complaint-handling.complaint-handling",
+      "inversedBy": "complaint_images"
+    }
+  }
+}

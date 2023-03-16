@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meterans",
+  "info": {
+    "singularName": "meteran",
+    "pluralName": "meterans",
+    "displayName": "Meteran",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "codemeteran": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}
